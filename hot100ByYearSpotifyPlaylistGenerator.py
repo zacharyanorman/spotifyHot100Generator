@@ -5,14 +5,6 @@
 print('Which year (1959-2019) do you want to a playlist from?')
 year = int(input())
 
-if type(year) != int:
-    print('Not a number')
-    year = int(input())
-    
-while year < 1959 or year > 2019:
-    print('Bad year input. Try again')
-    year = int(input())
-
 print('Finding Billboard Year-End Hot 100 singles of ' +str(year))
 
 #2. Scrape wikipedia for the top songs of that year
